@@ -1,0 +1,8 @@
+train: /home/huangliang/CV-Practical-training/dataset/train.txt
+val: /home/huangliang/CV-Practical-training/dataset/val.txt
+test: /home/huangliang/CV-Practical-training/dataset/test.txt
+nc: 3
+names:
+  0: two_wheeler    # 二轮车主体
+  1: helmet         # 佩戴头盔的头部
+  2: without_helmet # 未戴头盔的头部
