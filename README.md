@@ -52,6 +52,10 @@
 
 ## 3. 训练
 
+> 训练环境 `Ultralytics YOLOv8.2.86 🚀 Python-3.8.19 torch-2.4.0 CUDA:0 (NVIDIA A10, 22513MiB)`
+> 
+> 在 `BATCH_SIZE=32` 的情况下 `100 epochs completed in 4.229 hours.` 
+
 `train.ipynb`
 
 ```python
@@ -96,8 +100,32 @@ results = model.train(data="wheat.yaml", epochs=100， batch=32)
 
 ![results](https://my-img-typora.oss-cn-chengdu.aliyuncs.com/img/results.png)
 
-## 5. 训练视频
+## 5. 预测结果
 
-原视频：`test/videos/1.mp4`
+### 图片
 
-训练之后的视频：`test/res/1_full.mp4`， `test/res/1_only_helmet.mp4`
+<center class="half">
+    <img src="test/images/origin/test1.jpg" width="400"/>
+    <img src="test/images/pred/test1.jpg" width="400"/>
+</center>
+
+<center class="half">
+    <img src="test/images/origin/test2.png" width="400"/>
+    <img src="test/images/pred/test2.png" width="400"/>
+</center>
+
+<center class="half">
+    <img src="test/images/origin/test3.png" width="400"/>
+    <img src="test/images/pred/test3.png" width="400"/>
+</center>
+
+<center class="half">
+    <img src="test/images/origin/test4.png" width="400"/>
+    <img src="test/images/pred/test4.png" width="400"/>
+</center>
+
+### 视频
+
+原视频：`test/videos/origin/1.mp4`
+
+训练之后的视频：`test/videos/pred/1_full.mp4`， `test/videos/pred/1_only_helmet.mp4`
